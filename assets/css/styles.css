@@ -192,8 +192,7 @@ header {
 }
 
 .theme-dark .btn-theme-toggle::after {
-  right: initial;
-  left: 0.25rem;
+  right: calc(100% - 1.75rem);
 }
 
 .sect-main, .sect-today {
@@ -433,5 +432,14 @@ header {
     margin-right: -20vw;
     padding-left: calc(20vw + 2rem);
     padding-right: calc(20vw + 2rem);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  body, .header, .card, .page-title, .sect-header, .flwr-count, .card-value {
+    transition: all 0.25s ease-in-out;
+  }
+
+  .btn-theme-toggle::after {
+    transition: right 0.25s ease-in-out;
   }
 }
