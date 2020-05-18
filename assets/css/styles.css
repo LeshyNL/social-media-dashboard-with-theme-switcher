@@ -192,7 +192,8 @@ header {
 }
 
 .theme-dark .btn-theme-toggle::after {
-  right: 2.15rem;
+  right: initial;
+  left: 0.25rem;
 }
 
 .sect-main, .sect-today {
@@ -410,10 +411,6 @@ header {
 
   .footer {
     margin: 3rem 0;
-  }
-
-  .theme-dark .btn-theme-toggle::after {
-    right: 2rem;
   }
 }
 @media screen and (min-width: 1200px) {
