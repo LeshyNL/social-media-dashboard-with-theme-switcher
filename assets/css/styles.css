@@ -426,3 +426,15 @@ header {
     flex-basis: calc(25% - 2rem);
   }
 }
+@media screen and (min-width: 1600px) {
+  body {
+    padding: 0 20vw;
+  }
+
+  .header {
+    margin-left: -20vw;
+    margin-right: -20vw;
+    padding-left: calc(20vw + 2rem);
+    padding-right: calc(20vw + 2rem);
+  }
+}
