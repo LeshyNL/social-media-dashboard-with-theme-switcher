@@ -436,7 +436,9 @@ header {
 }
 @media (prefers-reduced-motion: no-preference) {
   body, .header, .card, .page-title, .sect-header, .flwr-count, .card-value {
-    transition: all 0.25s ease-in-out;
+    transition-property: background, color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
   }
 
   .btn-theme-toggle::after {
